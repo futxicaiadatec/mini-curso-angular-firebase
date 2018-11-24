@@ -1,21 +1,4 @@
-<label for="nome">Digite o primeiro nome</label>
-<input id="nome" type="text" [value]="nome">
-
-<label for="segundo-nome">Digite o segundo nome:</label>
-<input id="segundo-nome" type="text"
-          [(ngModel)]="nome2">
-
-<div>
-  Primeiro nome: {{ nome }}
-</div>
-
-<div>
-  Segundo nome: {{ nome2 }}
-</div>
-
-<div>
-  <button (click)="exibirAlerta()">Exibir alerta</button>
-</div>
-
-
+<app-formulario-lancamento (aoSalvar)="salvarEvento($event)"></app-formulario-lancamento>
+<app-nome-componente [nomeAExibir]="nome"></app-nome-componente>
+<app-segundo-component></app-segundo-component>
 <!-- <router-outlet></router-outlet> -->

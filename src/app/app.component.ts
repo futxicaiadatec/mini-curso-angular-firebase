@@ -15,4 +15,8 @@ export class AppComponent {
     alert(this.nome2);
     console.log(this.nome2);
   }
+
+  salvarEvento($event: any) {
+    alert($event);
+  }
 }
