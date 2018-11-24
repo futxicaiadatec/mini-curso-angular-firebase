@@ -6,17 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mini curso';
-  numero = 10;
-  nome = 'João';
-  nome2 = 'Maria';
 
-  exibirAlerta() {
-    alert(this.nome2);
-    console.log(this.nome2);
-  }
-
-  salvarEvento($event: any) {
-    alert($event);
-  }
 }

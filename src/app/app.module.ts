@@ -4,22 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
-import { FormularioLancamentoComponent } from './formulario-lancamento/formulario-lancamento.component';
-import { NomeComponenteComponent } from './nome-componente/nome-componente.component';
-import { SegundoComponentComponent } from './segundo-component/segundo-component.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
+import { LoginComponent } from './pages/login/login.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
    declarations: [
       AppComponent,
-      FormularioLancamentoComponent,
-      NomeComponenteComponent,
-      SegundoComponentComponent
+      LoginComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      FormsModule
+      FormsModule,
+      BrowserAnimationsModule,
+      MatTabsModule,
+      MatCardModule
    ],
    providers: [],
    bootstrap: [
