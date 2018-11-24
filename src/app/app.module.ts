@@ -11,6 +11,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
 
 @NgModule({
    declarations: [
@@ -20,6 +24,9 @@ import {MatButtonModule} from '@angular/material/button';
    imports: [
       BrowserModule,
       AppRoutingModule,
+      AngularFireModule.initializeApp(environment.firebase),
+      AngularFireAuthModule,
+      AngularFireDatabaseModule,
       FormsModule,
       BrowserAnimationsModule,
       MatTabsModule,
