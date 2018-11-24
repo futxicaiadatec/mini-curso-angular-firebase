@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { LoginComponent } from './pages/login/login.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
    declarations: [
@@ -20,7 +23,10 @@ import {MatCardModule} from '@angular/material/card';
       FormsModule,
       BrowserAnimationsModule,
       MatTabsModule,
-      MatCardModule
+      MatButtonModule,
+      MatCardModule,
+      MatFormFieldModule,
+      MatInputModule
    ],
    providers: [],
    bootstrap: [
